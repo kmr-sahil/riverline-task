@@ -23,8 +23,6 @@ your-repo/
 ├── surgeon/          # Part 2 — prompt debugging & fixes
 ├── pipeline/         # Part 3 — reusable evaluation pipeline
 │
-├── transcripts/      # provided transcripts
-├── verdicts.json     # ground truth labels
 └── results/          # generated outputs
 ```
 
@@ -140,7 +138,6 @@ Outputs are stored in:
 surgeon/
 ├── flaw_analysis.md
 ├── system-prompt-fixed.md
-└── before_after.md
 ```
 
 The goal was to check whether the **prompt fixes address the root causes of failures**.
@@ -232,16 +229,7 @@ Re-simulation of bad calls shows improved agent responses.
 If extended further, I would:
 
 * add automated prompt improvement suggestions
-* run multi-sample simulations for stability
-* introduce evaluation metrics dashboards
+* attempt to reduce token sizes
 * improve the scoring model with multiple judges
 
 ---
-
-# Cost Efficiency
-
-The solution stays within the **$5 API budget** by:
-
-* limiting re-simulations
-* minimizing LLM calls
-* keeping evaluation logic deterministic
