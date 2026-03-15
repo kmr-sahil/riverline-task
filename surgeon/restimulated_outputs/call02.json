@@ -1,0 +1,148 @@
+{
+  "call_id": "call_02_restimulated",
+  "duration_seconds": 0,
+  "total_turns": 20,
+  "customer": {
+    "name": "Rahul Verma",
+    "pending_amount": "50000",
+    "closure_amount": "35588",
+    "settlement_amount": "",
+    "dpd": "180"
+  },
+  "disposition": "CALLBACK_SCHEDULED",
+  "phases_visited": [
+    "opening",
+    "discovery",
+    "dispute",
+    "closing"
+  ],
+  "transcript": [
+    {
+      "speaker": "customer",
+      "text": "Yes?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Your total outstanding is 50000 rupees. But we can remove all charges and close your loan at just 35588 rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello? Please amount repeat."
+    },
+    {
+      "speaker": "agent",
+      "text": "Sorry, could you say that again?"
+    },
+    {
+      "speaker": "customer",
+      "text": "हां बोलिए."
+    },
+    {
+      "speaker": "agent",
+      "text": "हाँ, हम हिंदी में बात कर सकते हैं। आपके लोन का total outstanding 50000 rupees है। लेकिन अभी close करने पर 35588 rupees में पूरा loan बंद हो सकता है।"
+    },
+    {
+      "speaker": "customer",
+      "text": "Sir कौन सा payment?"
+    },
+    {
+      "speaker": "agent",
+      "text": "यह आपका DemoLender education loan है। account में payment pending दिख रहा है। क्या किसी वजह से payment रुक गया था?"
+    },
+    {
+      "speaker": "customer",
+      "text": "मैंने कोई loan नहीं लिया था."
+    },
+    {
+      "speaker": "agent",
+      "text": "मैं समझता हूँ। क्या आप बता सकती हैं कि यह loan किसने लिया था?"
+    },
+    {
+      "speaker": "customer",
+      "text": "Sir मेरे husband ने loan करवाया था."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है। क्या उन्होंने आपको बताया था कि loan का payment पूरा हो गया था?"
+    },
+    {
+      "speaker": "customer",
+      "text": "जी हां."
+    },
+    {
+      "speaker": "agent",
+      "text": "अगर payment हुआ है तो क्या आपके पास उसका UTR number या transaction detail है?"
+    },
+    {
+      "speaker": "customer",
+      "text": "नहीं, लेकिन मेरे husband PhonePe से payment करते थे."
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है। अगर आपको payment screenshot या transaction detail मिलती है तो कृपया हमें भेज दीजिए ताकि verification हो सके।"
+    },
+    {
+      "speaker": "customer",
+      "text": "उनकी 7 March 2025 को death हो गई है."
+    },
+    {
+      "speaker": "agent",
+      "text": "मुझे यह सुनकर बहुत अफसोस हुआ। क्या आपके पास उनका death certificate है?"
+    },
+    {
+      "speaker": "customer",
+      "text": "जी हां."
+    },
+    {
+      "speaker": "agent",
+      "text": "आप उसे support@demolender.com पर भेज सकती हैं। मैं आज 1:15 बजे आपके लिए callback schedule कर देता हूँ ताकि verification के बाद हम आपको अपडेट दे सकें।"
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 2,
+      "function": "proceed_to_discovery",
+      "params": {}
+    },
+    {
+      "turn": 5,
+      "function": "switch_language",
+      "params": {
+        "language": "hi"
+      }
+    },
+    {
+      "turn": 9,
+      "function": "proceed_to_dispute",
+      "params": {}
+    },
+    {
+      "turn": 20,
+      "function": "schedule_callback",
+      "params": {
+        "preferred_time": "आज 1:15 बजे",
+        "callback_type": "normal",
+        "reason": "ग्राहक death certificate और payment verification भेजना चाहते हैं"
+      }
+    },
+    {
+      "turn": 20,
+      "function": "end_call",
+      "params": {
+        "reason": "resolved_callback_scheduled"
+      }
+    }
+  ],
+  "analysis": {
+    "summary": "Borrower stated that her husband had taken the loan and claimed it was fully paid. She also informed that her husband passed away and offered to send the death certificate for verification. Agent requested payment proof and scheduled a callback for verification.",
+    "bot_flags": {
+      "is_confused": false,
+      "is_repeating": false,
+      "is_irrelevant": false
+    },
+    "customer_flags": {
+      "is_agitated": false,
+      "is_complaining": false
+    }
+  }
+}

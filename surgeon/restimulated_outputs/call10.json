@@ -1,0 +1,99 @@
+{
+  "call_id": "call_10_restimulated",
+  "duration_seconds": 85,
+  "total_turns": 10,
+  "customer": {
+    "name": "Ravi Gupta",
+    "pending_amount": "50000",
+    "closure_amount": "35588",
+    "settlement_amount": "",
+    "dpd": "180"
+  },
+  "disposition": "NO_COMMITMENT",
+  "phases_visited": [
+    "opening",
+    "discovery",
+    "negotiation",
+    "closing"
+  ],
+  "transcript": [
+    {
+      "speaker": "customer",
+      "text": "Yes."
+    },
+    {
+      "speaker": "agent",
+      "text": "Your total outstanding is 50000 rupees. But we can remove all charges and close your loan at just 35588 rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. Has something been making it difficult to arrange this payment?"
+    },
+    {
+      "speaker": "customer",
+      "text": "I can't say."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's alright. Sometimes situations are personal. I just want to understand if this is temporary or if arranging 35588 rupees right now would be difficult."
+    },
+    {
+      "speaker": "customer",
+      "text": "Yeah. I can share. Not a problem."
+    },
+    {
+      "speaker": "agent",
+      "text": "Understood. Just to be clear, closing the loan at 35588 rupees now would remove the extra charges and show the account as closed. When do you think you might be able to arrange this amount?"
+    },
+    {
+      "speaker": "customer",
+      "text": "I need some time."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. The sooner this is closed, the sooner your credit report can start recovering. Let me check back with you in about a week once you've had time to consider it."
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 2,
+      "function": "proceed_to_discovery",
+      "params": {}
+    },
+    {
+      "turn": 7,
+      "function": "proceed_to_negotiation",
+      "params": {}
+    },
+    {
+      "turn": 10,
+      "function": "proceed_to_closing",
+      "params": {
+        "resolution_type": "resolved_needs_time"
+      }
+    },
+    {
+      "turn": 10,
+      "function": "end_call",
+      "params": {
+        "reason": "resolved_needs_time"
+      }
+    }
+  ],
+  "analysis": {
+    "summary": "Borrower acknowledged the pending loan but did not disclose the reason for delay. Agent explained the closure offer and credit impact. Borrower requested time to consider options. Call ended with a plan to follow up later.",
+    "bot_flags": {
+      "is_confused": false,
+      "is_repeating": false,
+      "is_irrelevant": false
+    },
+    "customer_flags": {
+      "is_agitated": false,
+      "is_complaining": false
+    }
+  }
+}

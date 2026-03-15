@@ -1,0 +1,109 @@
+{
+  "call_id": "call_07_restimulated",
+  "duration_seconds": 120,
+  "total_turns": 14,
+  "customer": {
+    "name": "Meera Joshi",
+    "pending_amount": "50000",
+    "closure_amount": "35588",
+    "settlement_amount": "",
+    "dpd": "180"
+  },
+  "disposition": "LANGUAGE_BARRIER",
+  "phases_visited": [
+    "opening",
+    "discovery",
+    "closing"
+  ],
+  "transcript": [
+    {
+      "speaker": "customer",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Your total outstanding is 50000 rupees. But we can remove all charges and close your loan at just 35588 rupees."
+    },
+    {
+      "speaker": "customer",
+      "text": "Hello sir?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, I can hear you."
+    },
+    {
+      "speaker": "customer",
+      "text": "Sir, can you understand?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, I can hear you. I am calling about your DemoLender loan."
+    },
+    {
+      "speaker": "customer",
+      "text": "Do you know Tamil?"
+    },
+    {
+      "speaker": "agent",
+      "text": "ஆம், நாம் தமிழில் பேசலாம்."
+    },
+    {
+      "speaker": "customer",
+      "text": "ஹலோ? நான் சொல்லுவது உங்களுக்கு புரிகிறதா?"
+    },
+    {
+      "speaker": "agent",
+      "text": "மன்னிக்கவும், கொஞ்சம் தெளிவாக சொல்ல முடியுமா?"
+    },
+    {
+      "speaker": "customer",
+      "text": "ஹலோ? ஹலோ?"
+    },
+    {
+      "speaker": "agent",
+      "text": "ஹலோ? நீங்கள் என்னை கேட்கிறீர்களா?"
+    },
+    {
+      "speaker": "customer",
+      "text": "ஹலோ?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Connection issue இருக்கிறது போல. நான் பிறகு மீண்டும் தொடர்பு கொள்கிறேன்."
+    }
+  ],
+  "function_calls": [
+    {
+      "turn": 2,
+      "function": "proceed_to_discovery",
+      "params": {}
+    },
+    {
+      "turn": 7,
+      "function": "switch_language",
+      "params": {
+        "language": "ta"
+      }
+    },
+    {
+      "turn": 14,
+      "function": "end_call",
+      "params": {
+        "reason": "borrower_refused_conversation"
+      }
+    }
+  ],
+  "analysis": {
+    "summary": "Borrower requested Tamil language. Agent switched language correctly but communication remained unclear due to connection or comprehension issues. Conversation could not progress and call was ended.",
+    "bot_flags": {
+      "is_confused": false,
+      "is_repeating": false,
+      "is_irrelevant": false
+    },
+    "customer_flags": {
+      "is_agitated": false,
+      "is_complaining": false
+    }
+  }
+}
