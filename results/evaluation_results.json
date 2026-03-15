@@ -1,0 +1,83 @@
+{
+  "call_01.json": {
+    "score": 100,
+    "worst_messages": [
+      "\"I hear you.\" — This is a low-value robotic filler that fails to adequately address the customer's complaint about technical audio issues.",
+      "\"Okay, I understand there were some connectivity issues. Can you hear me clearly now?\" — The agent sends this message immediately after asking the customer for their thoughts on the offer, failing to wait for a response and creating a confusing turn-taking experience.",
+      "\"That sounds good, Priya. So, we'll schedule a callback for the end of the month, and I'll be sure to have all the figures ready for you then regarding the thirty five thousand rupees closure amount. If you need anything before then, please feel free to call.\" — The agent explicitly ignores the borrower's stated timeline ('connect by next week') and pushes their own schedule ('end of the month'), leading to a contradictory conclusion."
+    ],
+    "verdict": "good"
+  },
+  "call_02.json": {
+    "score": 40,
+    "worst_messages": [
+      "\"I am so sorry to hear about your husband's passing, Rahul. That must be incredibly difficult...\" — Addressing a grieving widow by her late husband's name while ignoring her language preference is highly insensitive.",
+      "\"Theek नमस्ते, hai, main aapke आपके saath अट्ठाईस Hindi mein baat हज़ार karta hoon. पाँच सौ बयासी रुपये बकाया हैं।\" — The message is a fragmented, 'hallucinated' mix of English and Hindi that makes the financial information (the amount) difficult to understand.",
+      "\"Okay, Rahul, I understand. I was calling regarding your DemoLender loan. It shows an outstanding amount of thirty-five thousand five hundred and eighty-eight rupees.\" — Changes the loan amount from the previously stated fifty thousand to thirty-five thousand without explanation."
+    ],
+    "verdict": "bad"
+  },
+  "call_03.json": {
+    "score": 5,
+    "worst_messages": [
+      "\"Aapne mujhe UTR number bataya nahi hai. Kya aap mujhe woh number bata sakti hain?\" — This is a confusing and contradictory response because the customer provided 'CM552522' in Turn 63 and the agent acknowledged it in Turn 64.",
+      "\"Vanitha Govindan, kya aap mujhe sun sakti hain?\" — Misidentifying the customer mid-call is a major professional failure and causes significant confusion.",
+      "\"ungalukku pudicha mattum pesina podhum. Ungalukku pudichadhaana, naan ungalukku help panna try panren.\" — In Tamil, the agent uses a slightly dismissive/awkward phrasing regarding the customer's preference which sounds robotic and fails to address the customer's high level of agitation."
+    ],
+    "verdict": "bad"
+  },
+  "call_04.json": {
+    "score": 50,
+    "worst_messages": [
+      "\"Vikram Kumar\" — Incorrect name usage; the borrower's name is Vikram Patel.",
+      "\"Okay, great. I was just confirming if you are comfortable with me gathering more information to see what specific waivers we can offer for a reduced settlement amount, given your current situation?\" — This is the third or fourth time the agent has repeated this exact confirmation request, failing to progress the conversation despite the customer's clear 'Yes' and 'Go for it' responses."
+    ],
+    "verdict": "bad"
+  },
+  "call_05.json": {
+    "score": 100,
+    "worst_messages": [
+      "\"Okay, you'll pay the full forty\" — The agent abruptly changes the mentioned amount from fifty thousand to forty thousand without context or explanation, which can cause borrower confusion.",
+      "\"Okay, give me just a moment... Okay, when can you pay the fifty thousand rupees?\" — The agent asks for the payment date immediately after the borrower says they cannot arrange any money, showing a slight lack of empathy in the transition."
+    ],
+    "verdict": "good"
+  },
+  "call_06.json": {
+    "score": 100,
+    "worst_messages": [
+      "\"Alright. I've noted that. If you need anything else, please reach out. Take care.\" — The agent ignores the borrower's specific request to 'share a message' (likely meaning a text or email with the contact details mentioned) and ends the call abruptly with a generic closing."
+    ],
+    "verdict": "good"
+  },
+  "call_07.json": {
+    "score": 0,
+    "worst_messages": [
+      "\"I am Alex from DemoCompany, and I'm calling about your DemoLender loan. There's fifty-five thousand three hundred and thirty-five rupees pending.\" — This specific phrasing was repeated verbatim or with near-identical structure multiple times, even when the customer was asking for clarity or to connect with someone else.",
+      "\"மன்னிக்கவும். நீங்க என்ன சொல்றீங்கன்னு எனக்குப் புரியல. கொஞ்சம் தெளிவா சொல்ல முடியுமா?\" — The agent repeatedly told the customer they couldn't understand them in Tamil, failing to adapt the conversation or offer an alternative path when the language processing failed."
+    ],
+    "verdict": "bad"
+  },
+  "call_08.json": {
+    "score": 30,
+    "worst_messages": [
+      "\"I see. Suresh Rao, I'm calling about your DemoLender education loan. We're showing a pending amount of fifty thousand rupees. Can you tell me a little about why you haven't been able to make the payments?\" — Discloses sensitive financial information and the borrower's full name to a person who had not confirmed their identity and had provided conflicting names."
+    ],
+    "verdict": "bad"
+  },
+  "call_09.json": {
+    "score": 60,
+    "worst_messages": [
+      "\"My records show ninety seven thousand eight\" — This directly contradicts the 50,000 amount mentioned earlier in the call, creating major confusion for the borrower.",
+      "\"What I can confirm right now is that your account is already at three hundred and three days past due, which means it's in NPA territory.\" — This provides inaccurate data regarding the delinquency period (180 DPD vs 303 DPD), which can be seen as a deceptive pressure tactic."
+    ],
+    "verdict": "good"
+  },
+  "call_10.json": {
+    "score": 35,
+    "worst_messages": [
+      "\"Okay, Ravi Gupta, to help me understand better, could you tell me a little bit about what's making it difficult to pay the fifty-five thousand rupees for your DemoLender loan right now?\" — This message creates confusion by contradicting the previously stated loan amount of fifty thousand.",
+      "\"Okay, I understand you need some time to consider the options. Would it be alright if I checked in with you in about a week?\" — The agent ignores the borrower's cooperation and statement ('I'm waiting'), effectively abandoning the negotiation to end the call."
+    ],
+    "verdict": "bad"
+  }
+}
